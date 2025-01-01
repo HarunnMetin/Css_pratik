@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>combinator pratik</title>
+  </head>
+  <style>
+    .parent > p {
+      color: red;
+    }
+    h1 ~ p {
+      color: blue;
+    }
+    li + li {
+      font-style: italic;
+    }
+    div span {
+      color: green;
+    }
+    .container span {
+      color: yellow;
+    }
+    .card h2 + p {
+      color: orangered;
+    }
+    .inner > span {
+      color: red;
+    }
+    .menu li:first-child + li {
+      font-weight: bold;
+    }
+    .box > p {
+      color: green;
+    }
+  </style>
+  <body>
+    <!-- /* Sadece .box içindeki <p> etiketlerini yeşil, <span> etiketlerini mavi yap */ -->
+    <div class="wrapper">
+      <div class="box">
+        <p>Text 1</p>
+        <p>Text 2</p>
+      </div>
+      <div class="box">
+        <span>Text 3</span>
+      </div>
+    </div>
+    <!-- /* Sadece "Home" yazan <li> öğesinden hemen sonraki öğeyi kalın (bold) yap */ -->
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <!-- /* Sadece .inner içindeki <span> etiketlerini kırmızı yap, dışarıdaki <span>'i etkileme */ -->
+    <div class="outer">
+      <div class="inner">
+        <span>Text 1</span>
+        <span>Text 2</span>
+      </div>
+      <span>Outer Text</span>
+    </div>
+    <!-- /* .card içindeki sadece <h2> başlıklarından sonra gelen <p> etiketlerini turuncu yap */ -->
+    <section>
+      <div class="card">
+        <h2>Title</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <h2>Title 2</h2>
+        <p>Description 2</p>
+      </div>
+    </section>
+    <!-- /* .container içindeki tüm <span> etiketlerini seç ve yazı rengini sarı yap */ -->
+    <div class="container">
+      <div>
+        <p>First paragraph</p>
+        <span>First span</span>
+      </div>
+      <div>
+        <p>Second paragraph</p>
+        <span>Second span</span>
+      </div>
+    </div>
+    <!-- /* Sadece <div> içindeki <span> etiketlerini yeşil yap */ -->
+    <div>
+      <span>Element 1</span>
+      <span>Element 2</span>
+      <div>Element 3</div>
+    </div>
+    <!-- /* Sadece bir <li> elemanından hemen sonra gelen diğer <li> elemanlarını italik yap */ -->
+
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <!-- /* Title'dan sonra gelen tüm <p> etiketlerini mavi yap */ -->
+    <div>
+      <h1>Title</h1>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+    </div>
+
+    <!-- /* Sadece .parent içindeki <p> etiketlerini seç ve onlara kırmızı renk ver */ -->
+
+    <div class="parent">
+      <p>Child 1</p>
+      <p>Child 2</p>
+      <span>Child 3</span>
+    </div>
+    <div>
+      <p>Outside Child</p>
+    </div>
+  </body>
+</html>

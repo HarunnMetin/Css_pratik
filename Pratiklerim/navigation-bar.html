@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Navbar genel stili */
+    .navbar {
+      background-color: #333; /* Arka plan rengi */
+      padding: 10px 20px;
+    }
+
+    /* Listeyi düzenlemek için */
+    .nav-list {
+      list-style: none; /* Noktaları kaldır */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Yan yana yerleştir */
+      justify-content: space-around; /* Eşit aralık bırak */
+      align-items: center;
+    }
+
+    /* Liste öğeleri (li) ve bağlantılar (a) */
+    .nav-list li a {
+      text-decoration: none; /* Alt çizgiyi kaldır */
+      color: white; /* Metin rengi */
+      padding: 10px 15px;
+      font-size: 18px;
+      border-radius: 5px; /* Hafif köşeler */
+      transition: background-color 0.3s; /* Hover efekti için */
+    }
+
+    /* Hover (fareyle üzerine gelince) */
+    .nav-list li a:hover {
+      background-color: #555; /* Arka plan rengi değişir */
+      color: #fff; /* Metin rengi beyaz kalır */
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

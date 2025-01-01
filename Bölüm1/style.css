@@ -1,0 +1,15 @@
+a {
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+section {
+  background-color: #640d5f;
+  font-size: 30px;
+  color: #eb5b00;
+  text-align: center;
+}
+h1 {
+  color: #ffe31a;
+}

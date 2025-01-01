@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restoran Menüsü</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <style>
+    /* Sayfa genel stil ayarları */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Başlık stil ayarları */
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0; /* Başlık etrafında iç boşluk */
+      margin-bottom: 20px; /* Başlık ile içerik arasında dış boşluk */
+    }
+
+    header h1 {
+      margin: 0; /* Başlık etrafında dış boşluk yok */
+    }
+
+    /* Menü stil ayarları */
+    .menu {
+      width: 80%;
+      margin: 0 auto; /* Menü etrafında dış boşluk bırakmamak */
+      padding: 20px;
+    }
+
+    /* Menü kategorileri stil ayarları */
+    .menu-category {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 2px solid #ddd; /* Kategori başlıkları etrafında sınır */
+      border-radius: 8px; /* Kategori kutularına yuvarlak köşe */
+    }
+
+    .menu-category h2 {
+      margin-top: 0; /* Kategori başlığının üstünde boşluk yok */
+      margin-bottom: 15px; /* Başlık ile yemek listesi arasına boşluk */
+    }
+
+    /* Yemek liste öğeleri stil ayarları */
+    .menu-category ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu-category li {
+      display: flex;
+      justify-content: space-between; /* Yemek ismi ve fiyatı arasına boşluk bırak */
+      padding: 10px;
+      margin-bottom: 10px; /* Her yemek öğesi arasına boşluk */
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    .food-item {
+      padding-right: 10px; /* Yemek ismi ile fiyat arasında boşluk */
+    }
+
+    .price {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+  <body>
+    <!-- Sayfa Başlığı -->
+    <header>
+      <h1>Restoran Menüsü</h1>
+    </header>
+
+    <!-- Ana Menü -->
+    <section class="menu">
+      <!-- Başlangıçlar -->
+      <div class="menu-category">
+        <h2>Başlangıçlar</h2>
+        <ul>
+          <li>
+            <span class="food-item">Mercimek Çorbası</span>
+            <span class="price">10₺</span>
+          </li>
+          <li>
+            <span class="food-item">Yoğurtlu Kabak Salatası</span>
+            <span class="price">12₺</span>
+          </li>
+          <li>
+            <span class="food-item">Fırın Patates</span>
+            <span class="price">8₺</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ana Yemekler -->
+      <div class="menu-category">
+        <h2>Ana Yemekler</h2>
+        <ul>
+          <li>
+            <span class="food-item">Izgara Tavuk</span>
+            <span class="price">25₺</span>
+          </li>
+          <li>
+            <span class="food-item">Köfte</span>
+            <span class="price">30₺</span>
+          </li>
+          <li>
+            <span class="food-item">Biftek</span>
+            <span class="price">40₺</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tatlılar -->
+      <div class="menu-category">
+        <h2>Tatlılar</h2>
+        <ul>
+          <li>
+            <span class="food-item">Baklava</span>
+            <span class="price">15₺</span>
+          </li>
+          <li>
+            <span class="food-item">Kadayıf</span>
+            <span class="price">12₺</span>
+          </li>
+          <li>
+            <span class="food-item">Sütlaç</span>
+            <span class="price">10₺</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
