@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boş Kart</title>
+    <style>
+      .card {
+        width: 300px; /* Kartın genişliği */
+        height: 400px; /* Kartın yüksekliği */
+        border: 2px solid black; /* Siyah kenarlık */
+
+        justify-content: center; /* İçeriği yatay merkezleme */
+        text-align: center;
+
+        transition: box-shadow 0.2s;
+      }
+      .card:hover {
+        background-color: brown;
+        cursor: pointer;
+        box-shadow: 7px 7px 7px 7px #000;
+      }
+      .card-2 {
+        width: 300px;
+        height: 400px;
+        border: 2px solid black;
+        justify-content: center;
+        text-align: center;
+        transition: box-shadow 0.2s;
+      }
+      .card-2:hover {
+        background-color: yellow;
+        cursor: pointer;
+        box-shadow: 7px 7px 7px 7px #000;
+      }
+      .cards {
+        display: flex; /* Yan yana hizalama */
+        justify-content: center; /* Kartları yatayda ortala */
+        align-items: center; /* Dikeyde hizala */
+        gap: 20px; /* Kartlar arasındaki boşluk */
+      }
+      .card-3 {
+        width: 300px;
+        height: 400px;
+        border: 2px solid black;
+        text-align: center;
+        justify-content: center;
+        transition: box-shadow 0.2;
+      }
+      .card-3:hover {
+        background-color: grey;
+        box-shadow: 7px 7px 7px 7px #000;
+      }
+
+      h1 {
+        color: black; /* Metin rengi */
+        font-size: 50px; /* Metin boyutu */
+        font-family: Arial, sans-serif; /* Yazı tipi */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card">
+        <!-- Kart boş bırakılabilir veya isterseniz içerik ekleyebilirsiniz -->
+        <h1>Kart</h1>
+      </div>
+      <div class="card-2">
+        <!-- Kart boş bırakılabilir veya isterseniz içerik ekleyebilirsiniz -->
+        <h1>Kart</h1>
+      </div>
+      <div class="card-3">
+        <!-- Kart boş bırakılabilir veya isterseniz içerik ekleyebilirsiniz -->
+        <h1>Kart</h1>
+      </div>
+    </div>
+  </body>
+</html>
