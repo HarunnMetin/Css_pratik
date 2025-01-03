@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    header {
+      background-color: blueviolet;
+      height: 100px;
+    }
+    .header {
+      margin-left: 25px;
+      padding-top: 25px;
+      color: orange;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .link_menu {
+      float: left;
+
+      margin-top: 15px;
+    }
+    .link_menu_item {
+      background-color: rgb(98, 28, 116);
+      padding: 10px;
+      margin-right: 20px;
+      margin-top: 10px;
+      width: 200px;
+    }
+    .link_menu_item a {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      text-decoration: none;
+    }
+    .link_menu_item a:hover {
+      color: black;
+      background-color: bisque;
+    }
+    .link_menu_item a :visited {
+      color: azure;
+    }
+    .middle-parapraph {
+    }
+    .footer {
+      background-color: blueviolet;
+      height: 100px;
+    }
+    .footer-header {
+      margin-left: 25px;
+      margin-top: 100px;
+      padding-top: 25px;
+      color: orange;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .header-2 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 30px;
+    }
+    .paragraph-block {
+    }
+  </style>
+  <body>
+    <header>
+      <h1 class="header">Header</h1>
+    </header>
+    <div class="link_menu">
+      <aside class="link_menu_item">
+        <a href="#">Html</a>
+      </aside>
+      <aside class="link_menu_item">
+        <a href="#">Css</a>
+      </aside>
+      <aside class="link_menu_item">
+        <a href="#">Javascript</a>
+      </aside>
+    </div>
+    <section class="middle-parapraph">
+      <div>
+        <h2 class="header-2">Komple Web Geliştirme Eğitimi</h2>
+      </div>
+      <div class="paragraph-block">
+        <p class="clearfix">
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            vel quae voluptate enim, provident eveniet aspernatur officia, ipsam
+            dicta deserunt fugit quia laboriosam ullam obcaecati consequuntur
+            nostrum quam. Incidunt, sint.</span
+          >
+          <br /><br />
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            sapiente assumenda temporibus recusandae est, impedit quas deserunt
+            asperiores quos possimus facilis harum, distinctio rerum numquam! Ad
+            exercitationem at repudiandae. Beatae!</span
+          >
+        </p>
+      </div>
+    </section>
+    <div>
+      <footer class="footer">
+        <h1 class="footer-header">Footer</h1>
+      </footer>
+    </div>
+  </body>
+</html>
