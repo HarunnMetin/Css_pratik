@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html {
+      height: 2000px;
+    }
+    .header {
+      position: sticky;
+      text-align: center;
+      top: 0;
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
+    .gallery {
+      width: 80%;
+      height: 800px;
+      margin: 20px auto;
+      border: 4px solid grey;
+    }
+    .image {
+      margin: 9px;
+      width: 150px;
+      height: 200px;
+      position: relative;
+      background-color: rgb(12, 67, 67);
+      border: 3px solid greenyellow;
+      color: white;
+    }
+    .image1 {
+      position: static;
+    }
+    .image2 {
+      position: relative;
+      left: 20px;
+    }
+    .image3 {
+      position: absolute;
+      top: 330px;
+      left: 230px;
+    }
+    .image4 {
+      position: static;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      font-size: 50px;
+    }
+  </style>
+  <body>
+    <h1 class="header">Resim Galeri</h1>
+    <div class="gallery">
+      <div class="image image1">Resim1</div>
+      <div class="image image2">Resim2</div>
+      <div class="image image3">Resim3</div>
+      <div class="image image4">Resim4</div>
+    </div>
+    <footer>Bu bir sabit footer!</footer>
+  </body>
+</html>
