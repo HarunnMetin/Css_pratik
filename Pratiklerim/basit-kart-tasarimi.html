@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      margin: 0;
+      background-color: #0d8d3c;
+      color: #fff;
+      position: fixed;
+      left: 800px;
+    }
+    .card {
+      position: relative;
+      left: 650px;
+      bottom: -100px;
+      border: 5px solid grey;
+      width: 350px;
+      height: 350px;
+      transition: box-shadow 0.5s;
+    }
+    .card:hover {
+      background-color: rgb(171, 158, 141);
+      box-shadow: 7px 7px 7px 7px;
+    }
+    .header {
+      position: relative;
+      left: 42%;
+      top: 1px;
+    }
+    .etiket {
+      background-color: red;
+      color: #fff;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-size: small;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>KART</h1>
+      <div class="card">
+        <h2 class="header">Başlik</h2>
+        <p class="etiket">yeni</p>
+      </div>
+    </header>
+  </body>
+</html>
