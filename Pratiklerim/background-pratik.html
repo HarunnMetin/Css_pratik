@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basit Uygulama</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: linear-gradient(
+          to bottom right rgba(80, 231, 4, 0.5),
+          rgba(134, 3, 3, 0.5)
+        ),
+        url("Pratiklerim/profil/lichtdurchlassige-fenstervorhange-holzboden.jpg.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    header {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+    }
+    .card {
+      background-color: aliceblue;
+      border-radius: 2px solid red;
+      text-align: center;
+      padding: 20px;
+
+      max-width: 400px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      transition: box-shadow 0.4s;
+    }
+    .card:hover {
+      box-shadow: 7px 7px 7px 7px red;
+    }
+    .card h2 {
+      color: greenyellow;
+    }
+    .card p {
+      color: orangered;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      font-size: 25px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Benim Web Sayfam</h1>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Kart Başliği</h2>
+        <p>Burasi kart içeriği. CSS öğrenmek için bir uygulama yapiyoruz.</p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 Harun Metin</p>
+    </footer>
+  </body>
+</html>
