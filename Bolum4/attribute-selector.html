@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* a[target] {
+      background-color: blueviolet;
+    }
+    [class] {
+      background-color: brown;
+    } */
+    /* [class="active"] {
+      background-color: aqua;
+    } */
+    /* [class*="text"] {
+      background-color: red;
+    } */
+    /* [class~="text"] {
+      background-color: red;
+    } */
+    /* [class|="active"] {
+      background-color: red;
+    } */
+    /* [class^="active"] {
+      background-color: red;
+    } */
+    [class$="active"] {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <span class="active span text"
+      >Lorem ipsum dolor sit amet consectetur.</span
+    >
+    <nav>
+      <a href="" target="_blank">home</a>
+      <a href="" class="active text active">about</a>
+      <a href="">contact</a>
+    </nav>
+  </body>
+</html>
