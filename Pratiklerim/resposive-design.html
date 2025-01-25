@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Tasarım</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        flex: 1 1 calc(33.33% - 20px);
+        margin: 10px;
+        background-color: rgb(90, 0, 0);
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-size: 18px;
+      }
+
+      @media (max-width: 768px) {
+        .box {
+          flex: 1 1 calc(50% - 20px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .box {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Kutu 1</div>
+      <div class="box">Kutu 2</div>
+      <div class="box">Kutu 3</div>
+      <div class="box">Kutu 4</div>
+      <div class="box">Kutu 5</div>
+      <div class="box">Kutu 6</div>
+    </div>
+  </body>
+</html>
