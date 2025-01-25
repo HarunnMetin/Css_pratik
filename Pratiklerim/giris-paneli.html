@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .giris-paneli {
+      border: 2px solid #b1c29e;
+      width: 300px;
+      height: 200px;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 4px 4px 4px 4px #98d8ef;
+    }
+    .giris-paneli label {
+      display: block;
+      margin-bottom: 2px;
+      font-weight: bold;
+    }
+    .giris-paneli input[type="text"],
+    .giris-paneli input[type="password"] {
+      border: 2px solid #98d8ef;
+      border-radius: 8px;
+      width: 97%;
+      padding: 4px;
+      margin-top: 10px;
+    }
+    .remember-me {
+      display: flex;
+      margin-top: 10px;
+      align-items: center;
+    }
+    .remember-me input {
+      color: #98d8ef;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    .giris-paneli button {
+      width: 100%;
+      font-weight: bold;
+      background-color: #bfbba9;
+      color: #98d8ef;
+      font-size: 24px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .giris-paneli button:hover {
+      background-color: #98d8ef;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="giris-paneli">
+      <form>
+        <label for="username">Kullanici Adi</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="kullanici adini giriniz"
+        />
+        <label for="password">Sifre</label>
+        <input
+          type="password"
+          d="password"
+          name="password"
+          placeholder="Sifrenizi giriniz"
+        />
+        <div class="remember-me">
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="checkbox">Beni Hatirla</label>
+        </div>
+        <button type="submit">Giris Yapin</button>
+      </form>
+    </div>
+  </body>
+</html>
