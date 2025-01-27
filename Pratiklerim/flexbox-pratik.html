@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --special-color: #fce7c8;
+      --second-color: #780c28;
+      --red: red;
+    }
+    body {
+      background-color: var(--special-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 25px;
+    }
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 80%;
+      max-width: 800px;
+    }
+    .gallery-item {
+      background-color: var(--second-color);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      margin: 20px;
+      width: 200px;
+      height: 200px;
+    }
+    @media (max-width: 768px) {
+      .gallery-item {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="gallery-container">
+      <div class="gallery-item">1</div>
+      <div class="gallery-item">2</div>
+      <div class="gallery-item">3</div>
+      <div class="gallery-item">4</div>
+      <div class="gallery-item">5</div>
+      <div class="gallery-item">6</div>
+    </div>
+  </body>
+</html>
