@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      background-color: goldenrod;
+      padding: 0 20px;
+    }
+    nav a {
+      align-self: center;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 15px;
+    }
+    nav a:hover {
+      background-color: royalblue;
+      transition: 0.8s;
+    }
+    .navigation {
+      list-style: none;
+      display: flex;
+    }
+    .navigation a {
+      display: block;
+      padding: 15px;
+    }
+    .navigation a:hover {
+      background-color: aliceblue;
+      color: black;
+      transition: 0.7s;
+    }
+    .navigation li:last-child {
+      display: none;
+    }
+    @media (max-width: 567px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        align-self: flex-start;
+      }
+      .navigation {
+        flex-direction: column;
+      }
+      .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 255);
+      }
+      .navigation li:last-child {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+      .responsive .navigation li:not(:last-child) {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <nav class="responsive">
+      <a href="#">Logo</a>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <a href=""><i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
