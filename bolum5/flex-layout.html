@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    header {
+      text-align: center;
+      background-color: black;
+      color: antiquewhite;
+      padding: 20px;
+    }
+    .navbar {
+      background-color: #155e95;
+      padding: 15px;
+      text-align: center;
+    }
+    .navbar a {
+      color: aliceblue;
+      text-decoration: none;
+      padding: 15px;
+    }
+    .navbar a:hover {
+      background-color: #104771;
+      font-family: "Rubik Vinyl", serif;
+      font-size: 16px;
+      color: red;
+    }
+    .main {
+      display: flex;
+    }
+    .ph {
+      background-color: #5d8736;
+      width: 100%;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    .sidebar {
+      flex: 25%;
+      order: 1;
+
+      margin: 20px;
+    }
+    .contain {
+      margin: 20px;
+      flex: 75%;
+    }
+    p {
+      font-size: 20px;
+      font-family: "Shadows Into Light", serif;
+    }
+    .box h1 {
+      color: #4c585b;
+      font-family: "Titan One", serif;
+      font-size: 50px;
+    }
+    @media (max-width: 700px) {
+      .main,
+      .navbar {
+        flex-direction: column;
+      }
+      .sidebar {
+        order: -1;
+      }
+    }
+    .footer {
+      text-align: center;
+
+      height: 100px;
+      background-color: #7c444f;
+    }
+    .box {
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Lorem, ipsum dolor</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </header>
+    <div class="navbar">
+      <a href="">Link1</a>
+      <a href="">Link2</a>
+      <a href="">Link3</a>
+      <a href="">Link4</a>
+    </div>
+
+    <div class="main">
+      <div class="sidebar">
+        <div class="box">
+          <h1>Lorem, ipsum</h1>
+          <div class="ph" style="height: 200px"></div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+            quaerat ad veritatis aliquid aspernatur repellendus qui fugiat
+            praesentium expedita vitae odio, possimus maxime eius nam dolore
+            laboriosam quasi temporibus sapiente.
+          </p>
+          <div class="ph" style="height: 50px"></div>
+          <div class="ph" style="height: 50px"></div>
+          <div class="ph" style="height: 50px"></div>
+        </div>
+      </div>
+      <div class="contain">
+        <div class="box">
+          <h1>Lorem, ipsum</h1>
+          <div class="ph" style="height: 200px"></div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+            quaerat ad veritatis aliquid aspernatur repellendus qui fugiat
+            praesentium expedita vitae odio, possimus maxime eius nam dolore
+            laboriosam quasi temporibus sapiente.
+          </p>
+        </div>
+        <div class="box">
+          <h1>Lorem, ipsum</h1>
+          <div class="ph" style="height: 200px"></div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+            quaerat ad veritatis aliquid aspernatur repellendus qui fugiat
+            praesentium expedita vitae odio, possimus maxime eius nam dolore
+            laboriosam quasi temporibus sapiente.
+          </p>
+        </div>
+        <div class="box">
+          <h1>Lorem, ipsum</h1>
+          <div class="ph" style="height: 200px"></div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+            quaerat ad veritatis aliquid aspernatur repellendus qui fugiat
+            praesentium expedita vitae odio, possimus maxime eius nam dolore
+            laboriosam quasi temporibus sapiente.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+  </body>
+</html>
