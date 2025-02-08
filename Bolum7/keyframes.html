@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=!, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #333;
+      }
+      .box {
+        background-color: goldenrod;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+        animation: a1 5s forwards 2s ease-in-out;
+      }
+      @keyframes a1 {
+        25% {
+          top: 100px;
+          left: 0px;
+          background-color: red;
+        }
+        50% {
+          top: 100px;
+          left: 100px;
+          background-color: azure;
+        }
+        75% {
+          top: 200px;
+          left: 100px;
+          background-color: bisque;
+        }
+        100% {
+          top: 200px;
+          left: 200px;
+          background-color: black;
+          border-radius: 50%;
+          border: 5px solid #fff;
+        }
+      }
+      h1 {
+        position: relative;
+        animation: h1 3s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+      @keyframes h1 {
+        from {
+          left: -320px;
+        }
+        to {
+          left: 400;
+          color: red;
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <div class="box"></div>
+  </body>
+</html>
